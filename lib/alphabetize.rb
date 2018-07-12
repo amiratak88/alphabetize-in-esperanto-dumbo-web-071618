@@ -1,5 +1,7 @@
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def should_be_swaped?(str1, str2)
+  str1 = str1.delete(" ")
+  str2 = str2.delete(" ")  
   shorter = [str1, str2].sort_by{|el| el.length}.first
   longer = [str1, str2].sort_by{|el| el.length}.last
   i = 0
