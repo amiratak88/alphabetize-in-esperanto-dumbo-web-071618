@@ -26,7 +26,7 @@ def check_arr(arr)
 end
 
 def alphabetize(arr)
-  arr = arr.map{|el| el.delete(" ")}
+  #arr = arr.map{|el| el.delete(" ")}
   finished = false
   i = 0
   while !finished
